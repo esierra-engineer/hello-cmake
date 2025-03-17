@@ -2,23 +2,22 @@
 Proyecto básico con Cmake y GTest
 
 # Compilation
-
-´´´
+# Step 1
+```
 $ cmake -S . -B build
-´´´
+```
 
  * S es para el codigo fuente
  * B es donde dejar los archivos generados
 
+# Step 2
+```
+$ cmake --build build_dir
+```
+* build_dir construye en ejectable o libreria
 
-* build construye en ejectable o libreria
+# Ejecutar
 
-´´´
-$ cmake --build build
-´´´
-
-* Ejecutar
-
- ´´´
-$ ./build/main
- ´´´
+ ```
+$ ./build_dir/main
+ ```
